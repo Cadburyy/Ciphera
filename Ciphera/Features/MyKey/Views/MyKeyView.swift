@@ -153,44 +153,6 @@ struct MyKeyView: View {
 
             .navigationTitle("My Key")
 
-            .toolbar {
-
-                ToolbarItemGroup(placement: .topBarTrailing) {
-
-                    if !viewModel.publicKey.isEmpty {
-
-                        ShareLink(item: viewModel.publicKey) {
-
-                            Image(systemName: "square.and.arrow.up")
-
-                        }
-
-                        .accessibilityLabel("Share public key")
-
-                    }
-
-                    Menu {
-
-                        Button {
-
-                            replayOnboarding()
-
-                        } label: {
-
-                            Label("Replay Onboarding", systemImage: "arrow.counterclockwise")
-
-                        }
-
-                    } label: {
-
-                        Image(systemName: "ellipsis.circle")
-
-                    }
-
-                }
-
-            }
-
             .task { viewModel.loadKey() }
 
             .confirmationDialog(
