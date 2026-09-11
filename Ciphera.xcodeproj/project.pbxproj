@@ -7,86 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06C0B23F4E1C7A9C3EF917CF /* CipheraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B385A73E5EC482B92A28645B /* CipheraApp.swift */; };
-		9867EFF3C5B0F658808CC1AD /* CipherRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDA3D3B188BC3071AA3E5C0 /* CipherRootView.swift */; };
-		FBD82B67A76725BA312E3C62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C125CD6FD6C744B3771F66D7 /* ContentView.swift */; };
-		E5F517D1EE5C151254474879 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B13B8C50241EDA6F82AC911 /* CryptoService.swift */; };
-		D521490F271372E5241F29A9 /* KeyDerivationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26373E4C7FC35FA5994A8CA6 /* KeyDerivationService.swift */; };
-		C00C996AAB01F686D1575053 /* DeviceAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E09FC7C336135435F39E50D /* DeviceAuthenticationService.swift */; };
-		6309F0D9060728F82D347D85 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B440DB5679012C10A1A395B /* KeychainService.swift */; };
-		E510762E3826FD1AFA24C923 /* DecryptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C110813E7C9D7E859476BAA /* DecryptionResult.swift */; };
-		726E7564543E015D7B710348 /* DecryptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED303B05D055ABD7FCD942F /* DecryptViewModel.swift */; };
-		3774493105209850BE983C90 /* DecryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE237CF41B03F64A69AF60B2 /* DecryptView.swift */; };
-		1FBE57CCF3C54C39A63DC6B6 /* DecryptionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A4AF318D8C94BC37DAECF /* DecryptionResultView.swift */; };
-		D12E18681CC5500F3C3E9E4C /* CryptoDictionaryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DBB2C7D9B6F7664FDBC320 /* CryptoDictionaryEntry.swift */; };
-		8CEC64E3D3A57984E06E3A7C /* CryptoDictionaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BFD9422B2A1D57B20A917C /* CryptoDictionaryDetailView.swift */; };
-		69C82436C573AE35B4B2A4CB /* CryptoDictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE6E1DED0F313B220913E1 /* CryptoDictionaryView.swift */; };
-		60671078BF5956B75D659896 /* EncryptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7BE20237AC8C0496BF09A /* EncryptionResult.swift */; };
-		85D364FB19216AC5E74C313B /* EncryptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61EC53C6604759335912F3 /* EncryptViewModel.swift */; };
-		A0BB6C34293E6C797DB94E59 /* EncryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C3AAD5F13FF592E5D924A /* EncryptView.swift */; };
-		EE7762D811B10D17D74DF059 /* EncryptionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94777DD54A98FD18D50DBD5 /* EncryptionResultView.swift */; };
-		32421D4C6FF25D7F8469F1C0 /* FileCryptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523646BBCFF46686885F4947 /* FileCryptViewModel.swift */; };
-		0CBE0526553027BF93EC9475 /* FileCryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9D14386CCB1AE4D160384 /* FileCryptView.swift */; };
-		E4A06CCE0A406292A725DC2F /* MyKeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16DBDA0D1A99993534F4E39 /* MyKeyViewModel.swift */; };
-		0C8AF7D6DA1E0F57266A9D59 /* PrivateKeyBackupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C3F4A060E039123D65013 /* PrivateKeyBackupViewModel.swift */; };
-		8C4BECC6F322B9BEFE0EFB0B /* RestorePrivateKeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B98B0F3D97ACBD3B5F5487 /* RestorePrivateKeyViewModel.swift */; };
-		90ABB062C6602E6D9D69ED57 /* MyKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2861F8C01FA6C28647972356 /* MyKeyView.swift */; };
-		CA3EDFB3F066A61E10BF0CF0 /* PrivateKeyBackupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A197EB58249046DA67FC39C /* PrivateKeyBackupView.swift */; };
-		BC2A2F9D434BB77B1E3960F3 /* RestorePrivateKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D289FE46BDE243839C30499B /* RestorePrivateKeyView.swift */; };
-		2733FA6D8E4AC35CE29D7025 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856003578F7366CD57C343A /* OnboardingView.swift */; };
-		611FE2A03C40E8219EEEA980 /* PublicKeyLabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEEC3721BAD480CABBBC91C /* PublicKeyLabViewModel.swift */; };
-		C54842E44937AC4E5278C4D4 /* PublicKeyLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945376E90CBEB2148A89FF /* PublicKeyLabView.swift */; };
-		3B0C43C11A2C31EE9748B16B /* SignVerifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B290A6F09D20613602320E /* SignVerifyViewModel.swift */; };
-		3ACA631F8251FAC696594AC1 /* SignVerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D0E86634FF87C6F70E88F /* SignVerifyView.swift */; };
-		5D687BDE9BC61EE90719A8A8 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3218287A9E1B72D3B6607F35 /* ToolsView.swift */; };
-		0EDB6ACC3DA71CCBDAC4FCBD /* TutorialKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C24E368D03C5B115F44077 /* TutorialKind.swift */; };
-		CF81F306A7370F4912BE3A50 /* TutorialViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A535E8EF9D48D7CFB513F4 /* TutorialViews.swift */; };
-		A31D0295414FDDA44D36BB20 /* HelpSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41745EE49E1B28CC1BCEB6 /* HelpSheet.swift */; };
 		02DC9140D8B26B438671E0B8 /* MessageDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D119C11305297389FDB5CF0 /* MessageDetailsView.swift */; };
+		06C0B23F4E1C7A9C3EF917CF /* CipheraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B385A73E5EC482B92A28645B /* CipheraApp.swift */; };
+		0C8AF7D6DA1E0F57266A9D59 /* PrivateKeyBackupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18C3F4A060E039123D65013 /* PrivateKeyBackupViewModel.swift */; };
+		0CBE0526553027BF93EC9475 /* FileCryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9D14386CCB1AE4D160384 /* FileCryptView.swift */; };
+		0EDB6ACC3DA71CCBDAC4FCBD /* TutorialKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C24E368D03C5B115F44077 /* TutorialKind.swift */; };
+		1FBE57CCF3C54C39A63DC6B6 /* DecryptionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A4AF318D8C94BC37DAECF /* DecryptionResultView.swift */; };
+		2733FA6D8E4AC35CE29D7025 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856003578F7366CD57C343A /* OnboardingView.swift */; };
+		32421D4C6FF25D7F8469F1C0 /* FileCryptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523646BBCFF46686885F4947 /* FileCryptViewModel.swift */; };
+		3774493105209850BE983C90 /* DecryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE237CF41B03F64A69AF60B2 /* DecryptView.swift */; };
+		3ACA631F8251FAC696594AC1 /* SignVerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D0E86634FF87C6F70E88F /* SignVerifyView.swift */; };
+		3B0C43C11A2C31EE9748B16B /* SignVerifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B290A6F09D20613602320E /* SignVerifyViewModel.swift */; };
+		5D687BDE9BC61EE90719A8A8 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3218287A9E1B72D3B6607F35 /* ToolsView.swift */; };
+		60671078BF5956B75D659896 /* EncryptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F7BE20237AC8C0496BF09A /* EncryptionResult.swift */; };
+		611FE2A03C40E8219EEEA980 /* PublicKeyLabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEEC3721BAD480CABBBC91C /* PublicKeyLabViewModel.swift */; };
+		6309F0D9060728F82D347D85 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B440DB5679012C10A1A395B /* KeychainService.swift */; };
+		69C82436C573AE35B4B2A4CB /* CryptoDictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE6E1DED0F313B220913E1 /* CryptoDictionaryView.swift */; };
+		726E7564543E015D7B710348 /* DecryptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED303B05D055ABD7FCD942F /* DecryptViewModel.swift */; };
+		85D364FB19216AC5E74C313B /* EncryptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61EC53C6604759335912F3 /* EncryptViewModel.swift */; };
+		8C4BECC6F322B9BEFE0EFB0B /* RestorePrivateKeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B98B0F3D97ACBD3B5F5487 /* RestorePrivateKeyViewModel.swift */; };
+		8CEC64E3D3A57984E06E3A7C /* CryptoDictionaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BFD9422B2A1D57B20A917C /* CryptoDictionaryDetailView.swift */; };
+		90ABB062C6602E6D9D69ED57 /* MyKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2861F8C01FA6C28647972356 /* MyKeyView.swift */; };
+		9867EFF3C5B0F658808CC1AD /* CipherRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDA3D3B188BC3071AA3E5C0 /* CipherRootView.swift */; };
 		A004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B004 /* Assets.xcassets */; };
 		A005 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B005 /* Preview Assets.xcassets */; };
+		A0BB6C34293E6C797DB94E59 /* EncryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C3AAD5F13FF592E5D924A /* EncryptView.swift */; };
+		A31D0295414FDDA44D36BB20 /* HelpSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41745EE49E1B28CC1BCEB6 /* HelpSheet.swift */; };
+		BC2A2F9D434BB77B1E3960F3 /* RestorePrivateKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D289FE46BDE243839C30499B /* RestorePrivateKeyView.swift */; };
+		C00C996AAB01F686D1575053 /* DeviceAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E09FC7C336135435F39E50D /* DeviceAuthenticationService.swift */; };
+		C54842E44937AC4E5278C4D4 /* PublicKeyLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945376E90CBEB2148A89FF /* PublicKeyLabView.swift */; };
+		CA3EDFB3F066A61E10BF0CF0 /* PrivateKeyBackupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A197EB58249046DA67FC39C /* PrivateKeyBackupView.swift */; };
+		CF81F306A7370F4912BE3A50 /* TutorialViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A535E8EF9D48D7CFB513F4 /* TutorialViews.swift */; };
+		D12E18681CC5500F3C3E9E4C /* CryptoDictionaryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DBB2C7D9B6F7664FDBC320 /* CryptoDictionaryEntry.swift */; };
+		D521490F271372E5241F29A9 /* KeyDerivationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26373E4C7FC35FA5994A8CA6 /* KeyDerivationService.swift */; };
+		E4A06CCE0A406292A725DC2F /* MyKeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16DBDA0D1A99993534F4E39 /* MyKeyViewModel.swift */; };
+		E510762E3826FD1AFA24C923 /* DecryptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C110813E7C9D7E859476BAA /* DecryptionResult.swift */; };
+		E5F517D1EE5C151254474879 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B13B8C50241EDA6F82AC911 /* CryptoService.swift */; };
+		EE7762D811B10D17D74DF059 /* EncryptionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94777DD54A98FD18D50DBD5 /* EncryptionResultView.swift */; };
+		FBD82B67A76725BA312E3C62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C125CD6FD6C744B3771F66D7 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B385A73E5EC482B92A28645B /* CipheraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipheraApp.swift; sourceTree = "<group>"; };
-		7DDA3D3B188BC3071AA3E5C0 /* CipherRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherRootView.swift; sourceTree = "<group>"; };
-		C125CD6FD6C744B3771F66D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2B13B8C50241EDA6F82AC911 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
 		26373E4C7FC35FA5994A8CA6 /* KeyDerivationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivationService.swift; sourceTree = "<group>"; };
-		7E09FC7C336135435F39E50D /* DeviceAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAuthenticationService.swift; sourceTree = "<group>"; };
-		9B440DB5679012C10A1A395B /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
-		8C110813E7C9D7E859476BAA /* DecryptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionResult.swift; sourceTree = "<group>"; };
-		6ED303B05D055ABD7FCD942F /* DecryptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptViewModel.swift; sourceTree = "<group>"; };
-		BE237CF41B03F64A69AF60B2 /* DecryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptView.swift; sourceTree = "<group>"; };
-		337A4AF318D8C94BC37DAECF /* DecryptionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionResultView.swift; sourceTree = "<group>"; };
-		31DBB2C7D9B6F7664FDBC320 /* CryptoDictionaryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDictionaryEntry.swift; sourceTree = "<group>"; };
-		E1BFD9422B2A1D57B20A917C /* CryptoDictionaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDictionaryDetailView.swift; sourceTree = "<group>"; };
-		CFAE6E1DED0F313B220913E1 /* CryptoDictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDictionaryView.swift; sourceTree = "<group>"; };
-		C7F7BE20237AC8C0496BF09A /* EncryptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionResult.swift; sourceTree = "<group>"; };
-		2F61EC53C6604759335912F3 /* EncryptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptViewModel.swift; sourceTree = "<group>"; };
-		6B0C3AAD5F13FF592E5D924A /* EncryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptView.swift; sourceTree = "<group>"; };
-		C94777DD54A98FD18D50DBD5 /* EncryptionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionResultView.swift; sourceTree = "<group>"; };
-		523646BBCFF46686885F4947 /* FileCryptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCryptViewModel.swift; sourceTree = "<group>"; };
-		BEC9D14386CCB1AE4D160384 /* FileCryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCryptView.swift; sourceTree = "<group>"; };
-		D16DBDA0D1A99993534F4E39 /* MyKeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKeyViewModel.swift; sourceTree = "<group>"; };
-		F18C3F4A060E039123D65013 /* PrivateKeyBackupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyBackupViewModel.swift; sourceTree = "<group>"; };
-		B4B98B0F3D97ACBD3B5F5487 /* RestorePrivateKeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePrivateKeyViewModel.swift; sourceTree = "<group>"; };
-		2861F8C01FA6C28647972356 /* MyKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKeyView.swift; sourceTree = "<group>"; };
-		5A197EB58249046DA67FC39C /* PrivateKeyBackupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyBackupView.swift; sourceTree = "<group>"; };
-		D289FE46BDE243839C30499B /* RestorePrivateKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePrivateKeyView.swift; sourceTree = "<group>"; };
 		2856003578F7366CD57C343A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		2FEEC3721BAD480CABBBC91C /* PublicKeyLabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKeyLabViewModel.swift; sourceTree = "<group>"; };
-		84945376E90CBEB2148A89FF /* PublicKeyLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKeyLabView.swift; sourceTree = "<group>"; };
-		91B290A6F09D20613602320E /* SignVerifyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVerifyViewModel.swift; sourceTree = "<group>"; };
-		F20D0E86634FF87C6F70E88F /* SignVerifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVerifyView.swift; sourceTree = "<group>"; };
-		3218287A9E1B72D3B6607F35 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
-		43C24E368D03C5B115F44077 /* TutorialKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialKind.swift; sourceTree = "<group>"; };
-		63A535E8EF9D48D7CFB513F4 /* TutorialViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViews.swift; sourceTree = "<group>"; };
+		2861F8C01FA6C28647972356 /* MyKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKeyView.swift; sourceTree = "<group>"; };
+		2B13B8C50241EDA6F82AC911 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
 		2C41745EE49E1B28CC1BCEB6 /* HelpSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSheet.swift; sourceTree = "<group>"; };
+		2F61EC53C6604759335912F3 /* EncryptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptViewModel.swift; sourceTree = "<group>"; };
+		2FEEC3721BAD480CABBBC91C /* PublicKeyLabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKeyLabViewModel.swift; sourceTree = "<group>"; };
+		31DBB2C7D9B6F7664FDBC320 /* CryptoDictionaryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDictionaryEntry.swift; sourceTree = "<group>"; };
+		3218287A9E1B72D3B6607F35 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		337A4AF318D8C94BC37DAECF /* DecryptionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionResultView.swift; sourceTree = "<group>"; };
+		3F9A5DF830533D9E0003B083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C24E368D03C5B115F44077 /* TutorialKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialKind.swift; sourceTree = "<group>"; };
+		523646BBCFF46686885F4947 /* FileCryptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCryptViewModel.swift; sourceTree = "<group>"; };
+		5A197EB58249046DA67FC39C /* PrivateKeyBackupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyBackupView.swift; sourceTree = "<group>"; };
+		63A535E8EF9D48D7CFB513F4 /* TutorialViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViews.swift; sourceTree = "<group>"; };
+		6B0C3AAD5F13FF592E5D924A /* EncryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptView.swift; sourceTree = "<group>"; };
+		6ED303B05D055ABD7FCD942F /* DecryptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptViewModel.swift; sourceTree = "<group>"; };
+		7DDA3D3B188BC3071AA3E5C0 /* CipherRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherRootView.swift; sourceTree = "<group>"; };
+		7E09FC7C336135435F39E50D /* DeviceAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAuthenticationService.swift; sourceTree = "<group>"; };
+		84945376E90CBEB2148A89FF /* PublicKeyLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKeyLabView.swift; sourceTree = "<group>"; };
+		8C110813E7C9D7E859476BAA /* DecryptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionResult.swift; sourceTree = "<group>"; };
 		8D119C11305297389FDB5CF0 /* MessageDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailsView.swift; sourceTree = "<group>"; };
+		91B290A6F09D20613602320E /* SignVerifyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVerifyViewModel.swift; sourceTree = "<group>"; };
+		9B440DB5679012C10A1A395B /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		B004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B005 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B006 /* Ciphera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ciphera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B385A73E5EC482B92A28645B /* CipheraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipheraApp.swift; sourceTree = "<group>"; };
+		B4B98B0F3D97ACBD3B5F5487 /* RestorePrivateKeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePrivateKeyViewModel.swift; sourceTree = "<group>"; };
+		BE237CF41B03F64A69AF60B2 /* DecryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptView.swift; sourceTree = "<group>"; };
+		BEC9D14386CCB1AE4D160384 /* FileCryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCryptView.swift; sourceTree = "<group>"; };
+		C125CD6FD6C744B3771F66D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7F7BE20237AC8C0496BF09A /* EncryptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionResult.swift; sourceTree = "<group>"; };
+		C94777DD54A98FD18D50DBD5 /* EncryptionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionResultView.swift; sourceTree = "<group>"; };
+		CFAE6E1DED0F313B220913E1 /* CryptoDictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDictionaryView.swift; sourceTree = "<group>"; };
+		D16DBDA0D1A99993534F4E39 /* MyKeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKeyViewModel.swift; sourceTree = "<group>"; };
+		D289FE46BDE243839C30499B /* RestorePrivateKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePrivateKeyView.swift; sourceTree = "<group>"; };
+		E1BFD9422B2A1D57B20A917C /* CryptoDictionaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDictionaryDetailView.swift; sourceTree = "<group>"; };
+		F18C3F4A060E039123D65013 /* PrivateKeyBackupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyBackupViewModel.swift; sourceTree = "<group>"; };
+		F20D0E86634FF87C6F70E88F /* SignVerifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVerifyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,288 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033EC120534E3CC5172B41A4 /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				B52D722516A9934F86CF9095 /* Models */,
+				81E689BDC72F4011949794BB /* ViewModels */,
+				95AB66EAD45D296383E9E16D /* Views */,
+			);
+			path = Encrypt;
+			sourceTree = "<group>";
+		};
+		08025BC7A1DAFFC00E4BF123 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84945376E90CBEB2148A89FF /* PublicKeyLabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		132EDE570682613C14914069 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE237CF41B03F64A69AF60B2 /* DecryptView.swift */,
+				337A4AF318D8C94BC37DAECF /* DecryptionResultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C48CE29E4E135EE62951B22 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B385A73E5EC482B92A28645B /* CipheraApp.swift */,
+				7DDA3D3B188BC3071AA3E5C0 /* CipherRootView.swift */,
+				C125CD6FD6C744B3771F66D7 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1D44109097E58E592B566767 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C41745EE49E1B28CC1BCEB6 /* HelpSheet.swift */,
+				8D119C11305297389FDB5CF0 /* MessageDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F0744E668A0ECEDFBA7D027 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2FEEC3721BAD480CABBBC91C /* PublicKeyLabViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1F26A8704D8CDB03D5D3D4BB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E5A93E18348D9801DB48CE54 /* Decrypt */,
+				9C91FE10E92CF4DB028BE55E /* Dictionary */,
+				033EC120534E3CC5172B41A4 /* Encrypt */,
+				9E1BE867E504DB042D91F0A1 /* Files */,
+				F70533D0F1743BB239AD73B8 /* MyKey */,
+				3BF44E8269DC59BEDCE7E9BB /* Onboarding */,
+				A7301DF8F3305FE36A140DBF /* PublicKeys */,
+				EA6797E6AB2D98CCEA64D093 /* Signing */,
+				34F55C9646359800F3328F4E /* Tools */,
+				389A8B1F3CB419FA7D236BF6 /* Tutorials */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		34F55C9646359800F3328F4E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E0C3E91F02D29E0FDFCEC268 /* Views */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3674B95F00AFEA85F80B14EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63A535E8EF9D48D7CFB513F4 /* TutorialViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		389A8B1F3CB419FA7D236BF6 /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				AD08B8A9A850407909C478CD /* Models */,
+				3674B95F00AFEA85F80B14EB /* Views */,
+			);
+			path = Tutorials;
+			sourceTree = "<group>";
+		};
+		399953A7822B6AA86F861137 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				7E09FC7C336135435F39E50D /* DeviceAuthenticationService.swift */,
+				9B440DB5679012C10A1A395B /* KeychainService.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		3BF44E8269DC59BEDCE7E9BB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5BAE94A22C1D485020F5D389 /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		40EF0223F34C04E5EBDF0D73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31DBB2C7D9B6F7664FDBC320 /* CryptoDictionaryEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		410188F9DC6E499FEC68BCF6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7BFBD2212EE9744F69DAA3FD /* Crypto */,
+				399953A7822B6AA86F861137 /* Security */,
+				7F4DCF8A3F00C61D4F5006E2 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		44A6EA6C20E3EB04C86AC384 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F20D0E86634FF87C6F70E88F /* SignVerifyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44C7E229889FE9D1BB841A79 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1D44109097E58E592B566767 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4BD7612E58E645F23EA4CDFD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				91B290A6F09D20613602320E /* SignVerifyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5BAE94A22C1D485020F5D389 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2856003578F7366CD57C343A /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7726125C423EF538D1659BB2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D16DBDA0D1A99993534F4E39 /* MyKeyViewModel.swift */,
+				F18C3F4A060E039123D65013 /* PrivateKeyBackupViewModel.swift */,
+				B4B98B0F3D97ACBD3B5F5487 /* RestorePrivateKeyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7BFBD2212EE9744F69DAA3FD /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				2B13B8C50241EDA6F82AC911 /* CryptoService.swift */,
+				26373E4C7FC35FA5994A8CA6 /* KeyDerivationService.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		7F4DCF8A3F00C61D4F5006E2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		81E689BDC72F4011949794BB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2F61EC53C6604759335912F3 /* EncryptViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		843AA91E154BB27F34C94ED6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6ED303B05D055ABD7FCD942F /* DecryptViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		881DA35CAFAA4DC9166E574A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFD9422B2A1D57B20A917C /* CryptoDictionaryDetailView.swift */,
+				CFAE6E1DED0F313B220913E1 /* CryptoDictionaryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A3BAC3CEE78DE2C9591FFC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C110813E7C9D7E859476BAA /* DecryptionResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95AB66EAD45D296383E9E16D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B0C3AAD5F13FF592E5D924A /* EncryptView.swift */,
+				C94777DD54A98FD18D50DBD5 /* EncryptionResultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C91FE10E92CF4DB028BE55E /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				40EF0223F34C04E5EBDF0D73 /* Models */,
+				881DA35CAFAA4DC9166E574A /* Views */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		9E1BE867E504DB042D91F0A1 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				DABAE6D7BADBF1D685279700 /* ViewModels */,
+				AD9DFE1DA0E6FA77EBE50CA9 /* Views */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		A7301DF8F3305FE36A140DBF /* PublicKeys */ = {
+			isa = PBXGroup;
+			children = (
+				1F0744E668A0ECEDFBA7D027 /* ViewModels */,
+				08025BC7A1DAFFC00E4BF123 /* Views */,
+			);
+			path = PublicKeys;
+			sourceTree = "<group>";
+		};
+		AD08B8A9A850407909C478CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43C24E368D03C5B115F44077 /* TutorialKind.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD9DFE1DA0E6FA77EBE50CA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEC9D14386CCB1AE4D160384 /* FileCryptView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B52D722516A9934F86CF9095 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7F7BE20237AC8C0496BF09A /* EncryptionResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D001 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +394,7 @@
 		D002 /* Ciphera */ = {
 			isa = PBXGroup;
 			children = (
+				3F9A5DF830533D9E0003B083 /* Info.plist */,
 				1C48CE29E4E135EE62951B22 /* App */,
 				410188F9DC6E499FEC68BCF6 /* Core */,
 				1F26A8704D8CDB03D5D3D4BB /* Features */,
@@ -137,74 +421,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1C48CE29E4E135EE62951B22 /* App */ = {
+		DABAE6D7BADBF1D685279700 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B385A73E5EC482B92A28645B /* CipheraApp.swift */,
-				7DDA3D3B188BC3071AA3E5C0 /* CipherRootView.swift */,
-				C125CD6FD6C744B3771F66D7 /* ContentView.swift */,
+				523646BBCFF46686885F4947 /* FileCryptViewModel.swift */,
 			);
-			path = App;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		410188F9DC6E499FEC68BCF6 /* Core */ = {
+		E0C3E91F02D29E0FDFCEC268 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7BFBD2212EE9744F69DAA3FD /* Crypto */,
-				399953A7822B6AA86F861137 /* Security */,
-				7F4DCF8A3F00C61D4F5006E2 /* Utilities */,
+				3218287A9E1B72D3B6607F35 /* ToolsView.swift */,
 			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		1F26A8704D8CDB03D5D3D4BB /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				E5A93E18348D9801DB48CE54 /* Decrypt */,
-				9C91FE10E92CF4DB028BE55E /* Dictionary */,
-				033EC120534E3CC5172B41A4 /* Encrypt */,
-				9E1BE867E504DB042D91F0A1 /* Files */,
-				F70533D0F1743BB239AD73B8 /* MyKey */,
-				3BF44E8269DC59BEDCE7E9BB /* Onboarding */,
-				A7301DF8F3305FE36A140DBF /* PublicKeys */,
-				EA6797E6AB2D98CCEA64D093 /* Signing */,
-				34F55C9646359800F3328F4E /* Tools */,
-				389A8B1F3CB419FA7D236BF6 /* Tutorials */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		44C7E229889FE9D1BB841A79 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				1D44109097E58E592B566767 /* Views */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		7BFBD2212EE9744F69DAA3FD /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				2B13B8C50241EDA6F82AC911 /* CryptoService.swift */,
-				26373E4C7FC35FA5994A8CA6 /* KeyDerivationService.swift */,
-			);
-			path = Crypto;
-			sourceTree = "<group>";
-		};
-		399953A7822B6AA86F861137 /* Security */ = {
-			isa = PBXGroup;
-			children = (
-				7E09FC7C336135435F39E50D /* DeviceAuthenticationService.swift */,
-				9B440DB5679012C10A1A395B /* KeychainService.swift */,
-			);
-			path = Security;
-			sourceTree = "<group>";
-		};
-		7F4DCF8A3F00C61D4F5006E2 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E5A93E18348D9801DB48CE54 /* Decrypt */ = {
@@ -217,32 +447,13 @@
 			path = Decrypt;
 			sourceTree = "<group>";
 		};
-		9C91FE10E92CF4DB028BE55E /* Dictionary */ = {
+		EA6797E6AB2D98CCEA64D093 /* Signing */ = {
 			isa = PBXGroup;
 			children = (
-				40EF0223F34C04E5EBDF0D73 /* Models */,
-				881DA35CAFAA4DC9166E574A /* Views */,
+				4BD7612E58E645F23EA4CDFD /* ViewModels */,
+				44A6EA6C20E3EB04C86AC384 /* Views */,
 			);
-			path = Dictionary;
-			sourceTree = "<group>";
-		};
-		033EC120534E3CC5172B41A4 /* Encrypt */ = {
-			isa = PBXGroup;
-			children = (
-				B52D722516A9934F86CF9095 /* Models */,
-				81E689BDC72F4011949794BB /* ViewModels */,
-				95AB66EAD45D296383E9E16D /* Views */,
-			);
-			path = Encrypt;
-			sourceTree = "<group>";
-		};
-		9E1BE867E504DB042D91F0A1 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				DABAE6D7BADBF1D685279700 /* ViewModels */,
-				AD9DFE1DA0E6FA77EBE50CA9 /* Views */,
-			);
-			path = Files;
+			path = Signing;
 			sourceTree = "<group>";
 		};
 		F70533D0F1743BB239AD73B8 /* MyKey */ = {
@@ -254,221 +465,12 @@
 			path = MyKey;
 			sourceTree = "<group>";
 		};
-		3BF44E8269DC59BEDCE7E9BB /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				5BAE94A22C1D485020F5D389 /* Views */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		A7301DF8F3305FE36A140DBF /* PublicKeys */ = {
-			isa = PBXGroup;
-			children = (
-				1F0744E668A0ECEDFBA7D027 /* ViewModels */,
-				08025BC7A1DAFFC00E4BF123 /* Views */,
-			);
-			path = PublicKeys;
-			sourceTree = "<group>";
-		};
-		EA6797E6AB2D98CCEA64D093 /* Signing */ = {
-			isa = PBXGroup;
-			children = (
-				4BD7612E58E645F23EA4CDFD /* ViewModels */,
-				44A6EA6C20E3EB04C86AC384 /* Views */,
-			);
-			path = Signing;
-			sourceTree = "<group>";
-		};
-		34F55C9646359800F3328F4E /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				E0C3E91F02D29E0FDFCEC268 /* Views */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		389A8B1F3CB419FA7D236BF6 /* Tutorials */ = {
-			isa = PBXGroup;
-			children = (
-				AD08B8A9A850407909C478CD /* Models */,
-				3674B95F00AFEA85F80B14EB /* Views */,
-			);
-			path = Tutorials;
-			sourceTree = "<group>";
-		};
-		1D44109097E58E592B566767 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2C41745EE49E1B28CC1BCEB6 /* HelpSheet.swift */,
-				8D119C11305297389FDB5CF0 /* MessageDetailsView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		8A3BAC3CEE78DE2C9591FFC5 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8C110813E7C9D7E859476BAA /* DecryptionResult.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		843AA91E154BB27F34C94ED6 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				6ED303B05D055ABD7FCD942F /* DecryptViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		132EDE570682613C14914069 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				BE237CF41B03F64A69AF60B2 /* DecryptView.swift */,
-				337A4AF318D8C94BC37DAECF /* DecryptionResultView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		40EF0223F34C04E5EBDF0D73 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				31DBB2C7D9B6F7664FDBC320 /* CryptoDictionaryEntry.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		881DA35CAFAA4DC9166E574A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E1BFD9422B2A1D57B20A917C /* CryptoDictionaryDetailView.swift */,
-				CFAE6E1DED0F313B220913E1 /* CryptoDictionaryView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B52D722516A9934F86CF9095 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C7F7BE20237AC8C0496BF09A /* EncryptionResult.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		81E689BDC72F4011949794BB /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				2F61EC53C6604759335912F3 /* EncryptViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		95AB66EAD45D296383E9E16D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				6B0C3AAD5F13FF592E5D924A /* EncryptView.swift */,
-				C94777DD54A98FD18D50DBD5 /* EncryptionResultView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		DABAE6D7BADBF1D685279700 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				523646BBCFF46686885F4947 /* FileCryptViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		AD9DFE1DA0E6FA77EBE50CA9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				BEC9D14386CCB1AE4D160384 /* FileCryptView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		7726125C423EF538D1659BB2 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				D16DBDA0D1A99993534F4E39 /* MyKeyViewModel.swift */,
-				F18C3F4A060E039123D65013 /* PrivateKeyBackupViewModel.swift */,
-				B4B98B0F3D97ACBD3B5F5487 /* RestorePrivateKeyViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		FF854E88E7496DDF9C4120C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				2861F8C01FA6C28647972356 /* MyKeyView.swift */,
 				5A197EB58249046DA67FC39C /* PrivateKeyBackupView.swift */,
 				D289FE46BDE243839C30499B /* RestorePrivateKeyView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		5BAE94A22C1D485020F5D389 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2856003578F7366CD57C343A /* OnboardingView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		1F0744E668A0ECEDFBA7D027 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				2FEEC3721BAD480CABBBC91C /* PublicKeyLabViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		08025BC7A1DAFFC00E4BF123 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				84945376E90CBEB2148A89FF /* PublicKeyLabView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		4BD7612E58E645F23EA4CDFD /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				91B290A6F09D20613602320E /* SignVerifyViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		44A6EA6C20E3EB04C86AC384 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F20D0E86634FF87C6F70E88F /* SignVerifyView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		E0C3E91F02D29E0FDFCEC268 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3218287A9E1B72D3B6607F35 /* ToolsView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		AD08B8A9A850407909C478CD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				43C24E368D03C5B115F44077 /* TutorialKind.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		3674B95F00AFEA85F80B14EB /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				63A535E8EF9D48D7CFB513F4 /* TutorialViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -698,6 +700,8 @@
 				DEVELOPMENT_TEAM = 5VK9KJ95XB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ciphera/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Authenticate before exporting or restoring your Ciphera private key.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -727,6 +731,8 @@
 				DEVELOPMENT_TEAM = 5VK9KJ95XB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ciphera/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Authenticate before exporting or restoring your Ciphera private key.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

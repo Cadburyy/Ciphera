@@ -53,7 +53,7 @@ struct DecryptView: View {
 
                             "Algorithm",
 
-                            value: info.mode == .secret ? info.algorithm.title : "Curve25519 + \\(info.algorithm.title)"
+                            value: info.mode == .secret ? info.algorithm.title : "Curve25519 + \(info.algorithm.title)"
 
                         )
 

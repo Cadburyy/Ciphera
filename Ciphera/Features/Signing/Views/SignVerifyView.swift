@@ -43,6 +43,9 @@ struct SignVerifyView: View {
         .navigationDestination(item: $viewModel.verificationNavigationResult) { result in
             SignatureVerificationResultView(result: result)
         }
+        .navigationDestination(isPresented: $viewModel.showingSignResult) {
+            SignatureCreationResultView(viewModel: viewModel)
+        }
         .sheet(isPresented: $showAutographSheet) {
             AutographCaptureView(drawingData: $viewModel.autographDrawingData)
         }
@@ -141,7 +144,7 @@ struct SignVerifyView: View {
         } header: {
             Text("Handwritten Autograph")
         } footer: {
-            Text("Optional. The autograph is visually attached to the content and cryptographically bound to the digital signature.")
+            Text("Required. Add a handwritten autograph before signing. It is attached to the content and cryptographically bound to the digital signature.")
         }
 
         Section {
@@ -159,59 +162,6 @@ struct SignVerifyView: View {
             .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
         }
 
-        if !viewModel.signature.isEmpty {
-            Section {
-                HStack(spacing: 12) {
-                    Image(systemName: "checkmark.seal.fill")
-                        .font(.title2)
-                        .foregroundStyle(.green)
-
-                    VStack(alignment: .leading, spacing: 3) {
-                        Text("Signature Created")
-                            .font(.headline)
-
-                        Text("This content has been digitally signed.")
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
-                    }
-                }
-            } header: {
-                Text("Signing")
-            } footer: {
-                Text("The CP-SIG1 package contains the signed content, optional autograph, public signing key, and digital signature. It is signed, not encrypted.")
-            }
-
-            Section("Signed Package") {
-                Text(viewModel.signature)
-                    .font(.system(.footnote, design: .monospaced))
-                    .lineLimit(1)
-                    .truncationMode(.tail)
-                    .textSelection(.enabled)
-                    .accessibilityLabel("Signed CP-SIG1 package preview")
-
-                Button {
-                    UIPasteboard.general.string = viewModel.signature
-                } label: {
-                    Label("Copy Signed Package", systemImage: "doc.on.doc")
-                }
-
-                ShareLink(item: viewModel.signature) {
-                    Label("Share Signed Package", systemImage: "square.and.arrow.up")
-                }
-
-                if let autographPNGURL = viewModel.autographPNGURL {
-                    ShareLink(item: autographPNGURL) {
-                        Label("Share Signed Autograph PNG", systemImage: "signature")
-                    }
-                }
-
-                if let signatureJSONURL = viewModel.signatureJSONURL {
-                    ShareLink(item: signatureJSONURL) {
-                        Label("Export Signature Details JSON", systemImage: "curlybraces")
-                    }
-                }
-            }
-        }
     }
 
     @ViewBuilder
@@ -280,6 +230,68 @@ struct SignVerifyView: View {
 
 
 
+    }
+}
+
+private struct SignatureCreationResultView: View {
+    @ObservedObject var viewModel: SignVerifyViewModel
+
+    var body: some View {
+        Form {
+            Section {
+                HStack(spacing: 12) {
+                    Image(systemName: "checkmark.seal.fill")
+                        .font(.title2)
+                        .foregroundStyle(.green)
+
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("Signature Created")
+                            .font(.headline)
+
+                        Text("This content has been digitally signed.")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            } header: {
+                Text("Signing")
+            } footer: {
+                Text("The CP-SIG1 package contains the signed content, optional autograph, public signing key, and digital signature. It is signed, not encrypted.")
+            }
+
+            Section("Signed Package") {
+                Text(viewModel.signature)
+                    .font(.system(.footnote, design: .monospaced))
+                    .lineLimit(1)
+                    .truncationMode(.tail)
+                    .textSelection(.enabled)
+                    .accessibilityLabel("Signed CP-SIG1 package preview")
+
+                Button {
+                    UIPasteboard.general.string = viewModel.signature
+                } label: {
+                    Label("Copy Signed Package", systemImage: "doc.on.doc")
+                }
+
+                ShareLink(item: viewModel.signature) {
+                    Label("Share Signed Package", systemImage: "square.and.arrow.up")
+                }
+
+                if let autographPNGURL = viewModel.autographPNGURL {
+                    ShareLink(item: autographPNGURL) {
+                        Label("Share Signed Autograph PNG", systemImage: "signature")
+                    }
+                }
+
+                if let signatureJSONURL = viewModel.signatureJSONURL {
+                    ShareLink(item: signatureJSONURL) {
+                        Label("Export Signature Details JSON", systemImage: "curlybraces")
+                    }
+                }
+            }
+        }
+        .navigationTitle("Signed")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -363,6 +375,14 @@ private struct AutographCaptureView: View {
         _workingDrawingData = State(initialValue: drawingData.wrappedValue)
     }
 
+    private var hasWorkingAutograph: Bool {
+        guard let workingDrawingData,
+              let drawing = try? PKDrawing(data: workingDrawingData) else {
+            return false
+        }
+        return !drawing.strokes.isEmpty
+    }
+
     var body: some View {
         NavigationStack {
             VStack(spacing: 16) {
@@ -405,6 +425,7 @@ private struct AutographCaptureView: View {
                         dismiss()
                     }
                     .fontWeight(.semibold)
+                    .disabled(!hasWorkingAutograph)
                 }
             }
         }

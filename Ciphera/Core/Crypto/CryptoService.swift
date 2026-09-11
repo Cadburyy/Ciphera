@@ -381,7 +381,7 @@ struct CryptoService {
         let publicData = try signingPublicKeyData(privateData: privateData, algorithm: algorithm)
         let publicKey = publicData.base64EncodedString()
         let autographDrawing = autographDrawingData?.base64EncodedString()
-        let createdAt = ISO8601DateFormatter().string(from: Date())
+        let createdAt = formattedCreatedDate(Date())
         let createdUsing = "Ciphera"
         let signerFingerprint = fingerprint(for: publicData, label: algorithm.rawValue)
         let contentSHA256 = sha256Hex(Data(text.utf8))
@@ -481,7 +481,23 @@ struct CryptoService {
     }
 
     static func signatureCreatedAt(_ signatureText: String) -> String? {
-        (try? decodeSignaturePayload(signatureText))?.createdAt
+        guard let createdAt = (try? decodeSignaturePayload(signatureText))?.createdAt else { return nil }
+        return displayCreatedDate(createdAt)
+    }
+
+    private static func formattedCreatedDate(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "dd-MM-yyyy"
+        return formatter.string(from: date)
+    }
+
+    private static func displayCreatedDate(_ value: String) -> String {
+        if let date = ISO8601DateFormatter().date(from: value) {
+            return formattedCreatedDate(date)
+        }
+        return value
     }
 
     static func signatureSignerFingerprint(_ signatureText: String) -> String? {

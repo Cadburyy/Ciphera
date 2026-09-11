@@ -32,12 +32,21 @@ final class SignVerifyViewModel: ObservableObject {
     @Published var embeddedContent: String?
     @Published var verificationResult: Bool?
     @Published var verificationNavigationResult: SignatureVerificationResult?
+    @Published var showingSignResult = false
     @Published var errorMessage: String?
     @Published var autographPNGURL: URL?
     @Published var signatureJSONURL: URL?
 
+    var hasAutograph: Bool {
+        guard let autographDrawingData,
+              let drawing = try? PKDrawing(data: autographDrawingData) else {
+            return false
+        }
+        return !drawing.strokes.isEmpty
+    }
+
     var canSign: Bool {
-        !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && hasAutograph
     }
 
     var isLegacySignature: Bool {
@@ -52,6 +61,11 @@ final class SignVerifyViewModel: ObservableObject {
     }
 
     func sign() {
+        guard canSign else {
+            errorMessage = "Enter content and add a handwritten autograph before signing."
+            return
+        }
+
         do {
             signature = try CryptoService.sign(
                 text,
@@ -63,6 +77,7 @@ final class SignVerifyViewModel: ObservableObject {
             verificationResult = nil
             errorMessage = nil
             try prepareExports()
+            showingSignResult = true
         } catch {
             errorMessage = error.localizedDescription
         }
